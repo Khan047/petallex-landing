@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import FeatureCard from '@/components/FeatureCard';
@@ -23,20 +24,20 @@ const Index = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
-      {/* Hero Section - Now Centered */}
+      {/* Hero Section - Centered */}
       <section className="pt-32 pb-24 md:pt-40 md:pb-32 px-6">
         <div className="container mx-auto text-center">
           <div className="flex flex-col items-center max-w-4xl mx-auto">
             <div className="animate-fade-in mb-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-petallex-blue">Cross-section design</span>
+                <span className="text-petallex-blue">Transform Infrastructure Design</span>
                 <br />
                 <span className="bg-petallex-gradient bg-clip-text text-transparent">
-                  reimagined with precision
+                  with Intelligent Cross-Section Software
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                SectionsPro is a powerful desktop application that transforms raw survey data into detailed cross-sections for civil infrastructure design.
+                Generate, analyze, and edit professional cross-sections for civil infrastructure projects in one powerful desktop application.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                 <Button className="bg-petallex-gradient text-white hover:opacity-90 px-8 py-6 text-lg">
@@ -67,41 +68,41 @@ const Index = () => {
       <section id="features" className="py-16 md:py-24 bg-white px-6">
         <div className="container mx-auto">
           <SectionHeading
-            title="Powerful Features"
-            subtitle="SectionsPro provides all the tools civil engineers need to create accurate, detailed cross-sections"
+            title="Why Engineering Teams Choose SectionsPro"
+            subtitle="Everything you need for precise infrastructure cross-section design"
             centered={true}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={Pencil}
-              title="Integrated CAD Tools"
-              description="Edit and customize cross-sections directly in the application without relying on external CAD software."
+              title="Integrated CAD Capabilities"
+              description="Full-featured CAD tools built right in, eliminating the need for external software and streamlining your workflow."
             />
             <FeatureCard
               icon={FileText}
-              title="Material Calculation"
-              description="Automatically calculate materials and volumes based on your cross-section designs."
+              title="Automated Analysis"
+              description="Instant groundwork analysis, material quantity calculations, and cost estimations for better project planning."
             />
             <FeatureCard
               icon={Ruler}
               title="Precision Design"
-              description="Create highly detailed and accurate cross-sections with professional-grade tools."
+              description="Create highly detailed and accurate cross-sections with professional-grade tools designed specifically for civil infrastructure."
             />
             <FeatureCard
               icon={Coins}
-              title="Cost Estimation"
-              description="Generate cost estimates for materials and construction based on your designs."
+              title="Flexible Licensing"
+              description="Token-based payment model that scales with your needs, perfect for both small firms and large consultancies."
             />
             <FeatureCard
               icon={Map}
-              title="Multiple Infrastructure Types"
-              description="Design cross-sections for roads, canals, embankments, and more in one application."
+              title="Survey Data Integration"
+              description="Seamlessly import and process raw survey data to generate accurate cross-sections for canals, roads, and railway tracks."
             />
             <FeatureCard
               icon={Train}
-              title="Railway Track Design"
-              description="Specialized tools for railway track cross-sections and alignments."
+              title="Multi-Infrastructure Support"
+              description="Design cross-sections for roads, railways, canals, embankments, and other linear infrastructure all in one application."
             />
           </div>
         </div>
@@ -266,29 +267,29 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-gray-50 px-6">
         <div className="container mx-auto">
           <SectionHeading
-            title="What Our Clients Say"
-            subtitle="Engineers and surveyors trust SectionsPro for their infrastructure design projects"
+            title="What Our Users Say"
+            subtitle="Trusted by engineering professionals worldwide"
             centered={true}
           />
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <TestimonialCard
-              quote="SectionsPro has revolutionized our road design process. What used to take days now takes hours, with better accuracy and detail."
-              author="Sarah Johnson"
-              role="Senior Engineer"
-              company="Highway Solutions Ltd"
+              quote="SectionsPro has cut our design time in half. The integrated CAD tools and automatic calculations have transformed how we approach infrastructure projects."
+              author="Sarah Chen"
+              role="Senior Civil Engineer"
+              company="Infrastructure Solutions Inc"
             />
             <TestimonialCard
-              quote="The integrated CAD tools are a game-changer. No more switching between applications to complete our designs."
-              author="Michael Chang"
-              role="Civil Engineer"
-              company="Urban Infrastructure Inc"
-            />
-            <TestimonialCard
-              quote="The material calculations and cost estimations have improved our project bidding accuracy by over 30%."
-              author="David Rodriguez"
+              quote="The token-based system gives us the flexibility we need, while the comprehensive analysis tools ensure we deliver accurate, cost-effective designs."
+              author="Michael Rodriguez"
               role="Project Manager"
               company="Global Engineering Partners"
+            />
+            <TestimonialCard
+              quote="Finally, a solution that handles our survey data efficiently and produces professional cross-sections without the need for multiple software packages."
+              author="David Thompson"
+              role="Survey Department Head"
+              company="Railway Development Corp"
             />
           </div>
         </div>
@@ -355,6 +356,39 @@ const Index = () => {
             <Button variant="outline" className="border-petallex-blue text-petallex-blue hover:bg-petallex-blue/10">
               Learn more about our token system
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 md:py-24 bg-gray-50 px-6">
+        <div className="container mx-auto">
+          <SectionHeading
+            title="Common Questions"
+            subtitle="Everything you need to know about SectionsPro"
+            centered={true}
+          />
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 max-w-4xl mx-auto">
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-petallex-darkBlue">What types of infrastructure can I design with SectionsPro?</h3>
+              <p className="text-gray-600">SectionsPro supports cross-section design for various linear infrastructure including canals, roads, railway tracks, and similar civil engineering projects.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-petallex-darkBlue">Do I need additional CAD software to use SectionsPro?</h3>
+              <p className="text-gray-600">No, SectionsPro includes a complete suite of CAD tools, allowing you to create, edit, and finalize designs all within the application.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-petallex-darkBlue">How does the token-based payment system work?</h3>
+              <p className="text-gray-600">Our token system allows you to pay for what you use, with tokens consumed based on your project needs. This flexible model ensures you're not locked into a fixed subscription.</p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-petallex-darkBlue">Can I import my existing survey data?</h3>
+              <p className="text-gray-600">Yes, SectionsPro is designed to work with raw survey data in standard industry formats, making it easy to import and process your existing data.</p>
+            </div>
           </div>
         </div>
       </section>
