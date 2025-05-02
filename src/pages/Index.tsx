@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import FeatureCard from '@/components/FeatureCard';
@@ -8,10 +7,10 @@ import PricingCard from '@/components/PricingCard';
 import { Button } from '@/components/ui/button';
 import { 
   Pencil, 
-  FileChart, 
+  FileText, 
   Ruler, 
   Coins, 
-  Road, 
+  Map, 
   Train, 
   Building, 
   MapPin, 
@@ -77,7 +76,7 @@ const Index = () => {
               description="Edit and customize cross-sections directly in the application without relying on external CAD software."
             />
             <FeatureCard
-              icon={FileChart}
+              icon={FileText}
               title="Material Calculation"
               description="Automatically calculate materials and volumes based on your cross-section designs."
             />
@@ -92,7 +91,7 @@ const Index = () => {
               description="Generate cost estimates for materials and construction based on your designs."
             />
             <FeatureCard
-              icon={Road}
+              icon={Map}
               title="Multiple Infrastructure Types"
               description="Design cross-sections for roads, canals, embankments, and more in one application."
             />
