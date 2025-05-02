@@ -14,6 +14,7 @@ import {
   Train, 
   Building, 
   MapPin, 
+  Download,
   ArrowRight 
 } from 'lucide-react';
 
@@ -22,11 +23,11 @@ const Index = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Now Centered */}
       <section className="pt-32 pb-24 md:pt-40 md:pb-32 px-6">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
+        <div className="container mx-auto text-center">
+          <div className="flex flex-col items-center max-w-4xl mx-auto">
+            <div className="animate-fade-in mb-8">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span className="text-petallex-blue">Cross-section design</span>
                 <br />
@@ -34,25 +35,27 @@ const Index = () => {
                   reimagined with precision
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-gray-700 mb-8">
+              <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
                 SectionsPro is a powerful desktop application that transforms raw survey data into detailed cross-sections for civil infrastructure design.
               </p>
-              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
                 <Button className="bg-petallex-gradient text-white hover:opacity-90 px-8 py-6 text-lg">
-                  Request Demo
+                  <Download className="mr-2" />
+                  Download for Windows
                 </Button>
                 <Button variant="outline" className="border-petallex-blue text-petallex-blue hover:bg-petallex-blue/10 px-8 py-6 text-lg">
-                  Learn More
+                  <Download className="mr-2" />
+                  Download for Mac/Linux
                 </Button>
               </div>
             </div>
-            <div className="relative animate-fade-in">
+            <div className="relative animate-fade-in mt-8 max-w-4xl">
               <div className="absolute -z-10 w-3/4 h-3/4 bg-petallex-gradient rounded-full blur-3xl opacity-20 animate-float"></div>
-              <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+              <div className="bg-white p-4 rounded-xl shadow-lg border border-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1504893524553-b855bce32c67" 
-                  alt="SectionsPro Application" 
-                  className="rounded-lg w-full object-cover"
+                  src="/lovable-uploads/d381678b-c543-4a86-9a2a-5e2f6c809ece.png" 
+                  alt="SectionsPro Application Interface" 
+                  className="rounded-lg w-full object-cover shadow-md"
                 />
               </div>
             </div>
@@ -157,7 +160,7 @@ const Index = () => {
             <div className="order-1 lg:order-2">
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb" 
+                  src="/lovable-uploads/fe97564a-5d67-43c2-9cff-71eb7d18e3a9.png" 
                   alt="SectionsPro Workflow" 
                   className="rounded-lg w-full object-cover"
                 />
@@ -365,10 +368,12 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button className="bg-white text-petallex-blue hover:bg-white/90 px-8 py-6 text-lg">
-              Request Demo
+              <Download className="mr-2" />
+              Download for Windows
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
-              Contact Sales
+              <Download className="mr-2" />
+              Download for Mac/Linux
             </Button>
           </div>
         </div>

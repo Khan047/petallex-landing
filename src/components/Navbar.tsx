@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from "./ui/button";
-import { Menu } from 'lucide-react';
+import { Menu, Download } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +43,8 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-petallex-blue hover:text-petallex-teal transition">How It Works</a>
           <a href="#pricing" className="text-petallex-blue hover:text-petallex-teal transition">Pricing</a>
           <Button className="bg-petallex-gradient text-white hover:opacity-90">
-            Request Demo
+            <Download className="mr-2 h-5 w-5" />
+            Download
           </Button>
         </div>
         
@@ -67,7 +68,8 @@ const Navbar = () => {
           <a href="#how-it-works" className="text-petallex-blue hover:text-petallex-teal transition" onClick={() => setIsMobileMenuOpen(false)}>How It Works</a>
           <a href="#pricing" className="text-petallex-blue hover:text-petallex-teal transition" onClick={() => setIsMobileMenuOpen(false)}>Pricing</a>
           <Button className="bg-petallex-gradient w-full text-white hover:opacity-90">
-            Request Demo
+            <Download className="mr-2 h-5 w-5" />
+            Download
           </Button>
         </div>
       )}
