@@ -187,7 +187,12 @@ const Index = () => {
             {/* Step 1 */}
             <div className="relative md:flex items-center mb-12 md:mb-24">
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-petallex-gradient text-white flex items-center justify-center">
-                <span className="text-xl font-bold">1</span>
+                <span className="text-xl font-bold text-center align-center" style={{
+                  margin: "auto auto",
+                  marginTop: '10px',
+                  // background:'red',
+                  display: 'block'
+                }}>1</span>
               </div>
               <div className="md:w-1/2 md:pr-16 mb-6 md:mb-0">
                 <div className="md:float-right md:text-right">
@@ -206,7 +211,13 @@ const Index = () => {
             {/* Step 2 */}
             <div className="relative md:flex items-center mb-12 md:mb-24">
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-petallex-gradient text-white flex items-center justify-center">
-                <span className="text-xl font-bold">2</span>
+                <span className="text-xl font-bold" style={{
+                  margin: "auto auto",
+                  marginTop: '10px',
+                  marginLeft: '15px',
+                  // background:'red',
+                  display: 'block'
+                }}>2</span>
               </div>
               <div className="md:w-1/2 md:pr-16 order-2 md:order-1">
                 {/* Placeholder for image */}
@@ -225,7 +236,13 @@ const Index = () => {
             {/* Step 3 */}
             <div className="relative md:flex items-center mb-12 md:mb-24">
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-petallex-gradient text-white flex items-center justify-center">
-                <span className="text-xl font-bold">3</span>
+                <span className="text-xl font-bold" style={{
+                  margin: "auto auto",
+                  marginTop: '10px',
+                  marginLeft: '15px',
+                  // background:'red',
+                  display: 'block'
+                }}>3</span>
               </div>
               <div className="md:w-1/2 md:pr-16 mb-6 md:mb-0">
                 <div className="md:float-right md:text-right">
@@ -244,7 +261,13 @@ const Index = () => {
             {/* Step 4 */}
             <div className="relative md:flex items-center">
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-petallex-gradient text-white flex items-center justify-center">
-                <span className="text-xl font-bold">4</span>
+                <span className="text-xl font-bold" style={{
+                  margin: "auto auto",
+                  marginTop: '10px',
+                  marginLeft: '15px',
+                  // background:'red',
+                  display: 'block'
+                }}>4</span>
               </div>
               <div className="md:w-1/2 md:pr-16 order-2 md:order-1">
                 {/* Placeholder for image */}
