@@ -428,7 +428,7 @@ const Index = () => {
               <Download className="mr-2" />
               Download for Windows
             </Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
+            <Button variant="outline" className="border-white text-petallex-blue hover:bg-white/10 px-8 py-6 text-lg">
               <Download className="mr-2" />
               Download for Mac/Linux
             </Button>
